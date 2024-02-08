@@ -2,7 +2,7 @@
 /config,noeldb,1     ! force off writing results to database
 *get,_wallstrt,active,,time,wall
 ! ANSYS input file written by Workbench version 2023 R2
-! File used for geometry attach: \\andrew.ad.cmu.edu\users\users24\lleng\Desktop\HW1\222_files\dp0\SYS\DM\SYS.scdoc
+! File used for geometry attach: E:\GitHub_repos\FEA_projects\HW1 (3)\HW1\222_files\dp0\SYS\DM\SYS.scdoc
 /title,222--Steady-State Thermal (A5)
 ! ****** Begin Custom Load Command Snippet ******
 /COM, ACT Extensions:
@@ -13,11 +13,11 @@
 /COM,
 ! ****** End   Custom Load Command Snippet ******
 *DIM,_wb_ProjectScratch_dir,string,248
-_wb_ProjectScratch_dir(1) = '\\andrew.ad.cmu.edu\users\users24\lleng\Desktop\HW1\_ProjectScratch\Scr2336\'
+_wb_ProjectScratch_dir(1) = 'E:\GitHub_repos\FEA_projects\HW1 (3)\HW1\_ProjectScratch\ScrB3F2\'
 *DIM,_wb_SolverFiles_dir,string,248
-_wb_SolverFiles_dir(1) = '\\andrew.ad.cmu.edu\users\users24\lleng\Desktop\HW1\222_files\dp0\SYS\MECH\'
+_wb_SolverFiles_dir(1) = 'E:\GitHub_repos\FEA_projects\HW1 (3)\HW1\222_files\dp0\SYS\MECH\'
 *DIM,_wb_userfiles_dir,string,248
-_wb_userfiles_dir(1) = '\\andrew.ad.cmu.edu\users\users24\lleng\Desktop\HW1\222_files\user_files\'
+_wb_userfiles_dir(1) = 'E:\GitHub_repos\FEA_projects\HW1 (3)\HW1\222_files\user_files\'
 /com,--- Data in consistent MKS units. See Solving Units in the help system for more information.
 /units,MKS
 /nopr
@@ -13424,6 +13424,7 @@ csys,0
 toffst,273.15,  ! Temperature offset from absolute zero
 /wb,mat,start              !  starting to send materials
 /com,*********** Send Materials ***********
+Temperature = 'TEMP' ! Temperature
 MP,DENS,1,7200,	! kg m^-3
 MP,ALPX,1,1.1e-05,	! C^-1
 MP,C,1,447,	! J kg^-1 C^-1

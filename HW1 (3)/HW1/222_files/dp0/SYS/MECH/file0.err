@@ -1,10 +1,10 @@
-/COM,ANSYS RELEASE 2023 R2           BUILD 23.2      UP20230531       17:18:12
+/COM,ANSYS RELEASE 2023 R2           BUILD 23.2      UP20230531       22:36:38
 
- *** WARNING ***                         CP =       2.609   TIME= 17:18:14
+ *** WARNING ***                         CP =       0.469   TIME= 22:36:38
  Element shape checking is currently inactive.  Issue SHPP,ON or         
  SHPP,WARN to reactivate, if desired.                                    
 
- *** WARNING ***                         CP =       2.859   TIME= 17:18:14
+ *** WARNING ***                         CP =       0.531   TIME= 22:36:38
  Material number 5 (used by element 7237) should normally have at least  
  one MP or one TB type command associated with it.  Output of energy by  
  material may not be available.                                          
