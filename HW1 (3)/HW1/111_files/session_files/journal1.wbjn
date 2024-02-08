@@ -1,0 +1,24 @@
+# encoding: utf-8
+# 2023 R2
+SetScriptVersion(Version="23.2.142")
+DesignModeler.CreateGeometrySystemWithActiveCAD(
+    FilePath=r"\\andrew.ad.cmu.edu\users\users24\lleng\Desktop\HW1\CurvedPipe.scdoc",
+    PlugInName="SpaceClaim[18180]")
+template1 = GetTemplate(
+    TemplateName="Steady-State Thermal",
+    Solver="ANSYS")
+system1 = GetSystem(Name="Geometry")
+system2 = template1.CreateSystem(
+    Position="Right",
+    RelativeTo=system1)
+geometry1 = system2.GetContainer(ComponentName="Geometry")
+geometry1.SetFile(FilePath="//andrew.ad.cmu.edu/users/users24/lleng/Desktop/HW1/CurvedPipe.scdoc")
+modelComponent1 = system2.GetComponent(Name="Model")
+modelComponent1.Refresh()
+model1 = system2.GetContainer(ComponentName="Model")
+model1.Edit()
+Save(Overwrite=True)
+geometry2 = system1.GetContainer(ComponentName="Geometry")
+geometry2.Exit()
+Save(Overwrite=True)
+Save(Overwrite=True)

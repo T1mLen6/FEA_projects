@@ -1,0 +1,54 @@
+# encoding: utf-8
+# 2023 R2
+SetScriptVersion(Version="23.2.142")
+template1 = GetTemplate(
+    TemplateName="Steady-State Thermal",
+    Solver="ANSYS")
+system1 = template1.CreateSystem()
+Save(Overwrite=True)
+geometry1 = system1.GetContainer(ComponentName="Geometry")
+geometry1.SetFile(
+    FilePath="//andrew.ad.cmu.edu/users/users24/lleng/Desktop/HW1/CurvedPipe11.scdoc",
+    PlugInName="SpaceClaim[23284]")
+geometry1.Edit(IsSpaceClaimGeometry=True)
+modelComponent1 = system1.GetComponent(Name="Model")
+modelComponent1.Refresh()
+model1 = system1.GetContainer(ComponentName="Model")
+model1.Edit()
+Save(Overwrite=True)
+geometryComponent1 = system1.GetComponent(Name="Geometry")
+geometryComponent1.Update(AllDependencies=True)
+modelComponent1.Update(AllDependencies=True)
+Save(Overwrite=True)
+modelComponent1.Update(AllDependencies=True)
+geometryComponent1.Update(AllDependencies=True)
+engineeringData1 = system1.GetContainer(ComponentName="Engineering Data")
+matl1 = engineeringData1.CreateMaterial(Name="Foam Insulation")
+matl1.SetSuppression(Suppressed=True)
+matl1.SetSuppression(Suppressed=False)
+favorites1 = EngData.LoadFavoriteItems()
+matlProp1 = matl1.CreateProperty(
+    Name="Thermal Conductivity",
+    Behavior="Isotropic",
+    Qualifiers={"Definition": "", "Behavior": "Isotropic"})
+matlProp1.SetData(
+    Index=-1,
+    Variables=["Thermal Conductivity"],
+    Values=[["0.2 [W m^-1 C^-1]"]])
+matlProp2 = matl1.CreateProperty(
+    Name="Thermal Conductivity",
+    Behavior="Orthotropic",
+    Qualifiers={"Definition": "", "Behavior": "Orthotropic"})
+matlProp2.Delete(Behavior="Orthotropic")
+materialPropertyData1 = matlProp2.GetPropertyData(
+    Name="Thermal Conductivity",
+    Qualifiers={"Definition": "", "Behavior": "Isotropic"})
+materialPropertyData1.SetSuppression(Suppressed=False)
+modelComponent1.Update(AllDependencies=True)
+Save(Overwrite=True)
+Save(Overwrite=True)
+Save(Overwrite=True)
+Save(Overwrite=True)
+Save(Overwrite=True)
+model1.Exit()
+Save(Overwrite=True)
