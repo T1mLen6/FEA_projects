@@ -2,13 +2,14 @@
 <Storage>
   <Project Version="9.1">
     <base-designpoint-name valType="String">0</base-designpoint-name>
-    <timestamp-max valType="Int64">6418</timestamp-max>
+    <timestamp-max valType="Int64">6852</timestamp-max>
     <framework-build-version valType="String">23.2.142.0</framework-build-version>
     <external-version-string valType="String">2023 R2</external-version-string>
-    <last-saved-utc valType="String">02/07/2024 23:01:39</last-saved-utc>
+    <last-saved-utc valType="String">02/08/2024 04:07:12</last-saved-utc>
     <managed-categories valType="String">[report, misc, progress]</managed-categories>
     <logHistory valType="StringArray">
       <ArrayEntry Index="0">lleng@ANSYS-B10-26:C:\Users\lleng\AppData\Local\Temp\WorkbenchLogs\CoreEvents21844.log</ArrayEntry>
+      <ArrayEntry Index="1">timle@TIMDESKTOP:C:\Users\timle\AppData\Local\Temp\WorkbenchLogs\CoreEvents25812.log</ArrayEntry>
     </logHistory>
     <expression-scope-container valType="String">Parameters</expression-scope-container>
     <project-type valType="String">WB2</project-type>
@@ -46,9 +47,7 @@
 "94c0c34a-88e6-4c26-bac8-18fa44aeb2be": "/FileContainer/FileReference:F7",
 "e9624423-c22a-482e-acf0-1d9df2d39c24": "/FileContainer/FileReference:F8",
 "7876e977-b341-46a3-80a6-daf71e92ec63": "/FileTypesContainer/FileType:GeometryFileType",
-"621729cd-a75e-4765-a617-db1f1ece0574": "/FileTypesContainer/FileType:MechanicalFileType",
-"876d3998-dfd8-421e-8c80-b25848b0eb36": "/Parameters/Parameter:P1",
-"339768b4-e5e3-49ee-88fa-4e5ec799243b": "/Parameters/Parameter:P2"
+"621729cd-a75e-4765-a617-db1f1ece0574": "/FileTypesContainer/FileType:MechanicalFileType"
 }</ReferenceList>
       </ProjectReferenceList>
       <DesignPointReferenceListCollection>
@@ -204,9 +203,7 @@
 "c60e8a21-03a5-48dd-91be-cea4e00ac5ba": "/Engineering Data/MaterialPropertyData:Relative Permeability 1",
 "d07e1a5e-ba8c-4487-b81d-5a1baafd0e9e": "/Engineering Data/MaterialVariable:Relative Permeability 1",
 "5afd4ae8-2d21-40f3-9065-860dab139674": "/Engineering Data/MaterialProperty:Material Unique Id 1",
-"38491b54-15a7-4f7d-8442-66649e35de8b": "/Engineering Data/MaterialPropertyData:Material Unique Id 1",
-"08687d9b-01ee-4618-8022-40baec04af47": "/Setup/ParameterAdapter5:1421b784-c2cd-409a-b2f6-32f996544626",
-"fd7c6daa-4f95-48be-a9ae-6095ce84a3b1": "/Setup/ParameterAdapter6:5aa9f0b0-56c5-4b8a-96a5-90e85f680818"
+"38491b54-15a7-4f7d-8442-66649e35de8b": "/Engineering Data/MaterialPropertyData:Material Unique Id 1"
 }</ReferenceList>
         </DesignPointReferenceList>
       </DesignPointReferenceListCollection>
@@ -252,7 +249,7 @@
       <Object Name="/FileContainer/FileReference:F2" Version="1.0">
         <class-type valType="String">FileReference</class-type>
         <object-name valType="String">F2</object-name>
-        <member-data valType="String">{"DisplayText": "act.dat", "FileType": $$2ae49708-aa62-4885-9ff3-37e8d71704f3, "DependentFiles": [], "ContainerAssociations": [], "SkipForDesignPointDuplication": False, "IsDeletable": True, "ExternalSource": None, "LastDownloadFromRepository": -1, "Location": r"$(ProjectName)_files\dp0\act.dat", "ReferenceCount": 9}</member-data>
+        <member-data valType="String">{"DisplayText": "act.dat", "FileType": $$2ae49708-aa62-4885-9ff3-37e8d71704f3, "DependentFiles": [], "ContainerAssociations": [], "SkipForDesignPointDuplication": False, "IsDeletable": True, "ExternalSource": None, "LastDownloadFromRepository": -1, "Location": r"$(ProjectName)_files\dp0\act.dat", "ReferenceCount": 10}</member-data>
       </Object>
       <Object Name="/FileContainer/FileReference:F3" Version="1.0">
         <class-type valType="String">FileReference</class-type>
@@ -301,13 +298,13 @@
       <maxUpdateOrder valType="Double">1</maxUpdateOrder>
       <deleted-sources valType="String">[]</deleted-sources>
       <last-updated valType="Int64">0</last-updated>
-      <last-modified-by-usage valType="String">{"Extrinsic": 6403, "Input": 6407, "Output": 3882}</last-modified-by-usage>
+      <last-modified-by-usage valType="String">{"Extrinsic": 6847, "Input": 6849, "Output": 3882}</last-modified-by-usage>
       <outputs-generated-by-type valType="String">{}</outputs-generated-by-type>
-      <contains-significant-data valType="Boolean">false</contains-significant-data>
+      <contains-significant-data valType="Boolean">true</contains-significant-data>
       <Object Name="/Parameters/DesignPoint:0" Version="1.0">
         <class-type valType="String">DesignPoint</class-type>
         <object-name valType="String">0</object-name>
-        <member-data valType="String">{"DisplayText": "DP 0", "JustDuplicated": False, "PartiallyRetainedData": [], "ValidRetainedData": [], "ErrorsOnLastUpdate": {}, "LastUpdateInformation": {"DidUpdate": "True", "DidPreRsmUpdate": "False"}, "Parameters": {"$$876d3998-dfd8-421e-8c80-b25848b0eb36": "20 [W m^-2 C^-1]", "$$339768b4-e5e3-49ee-88fa-4e5ec799243b": "3.8 [W m^-2 C^-1]"}, "ParameterErrors": {}, "CurrentValues": {"$$876d3998-dfd8-421e-8c80-b25848b0eb36": {"__FRAMEWORK_ANY_SPEC__": "Ansys.Core.DataSpecs.QuantitySpec", "value": "20 [W m^-2 C^-1]"}, "$$339768b4-e5e3-49ee-88fa-4e5ec799243b": {"__FRAMEWORK_ANY_SPEC__": "Ansys.Core.DataSpecs.QuantitySpec", "value": "3.8 [W m^-2 C^-1]"}}, "ParameterStatus": {"$$876d3998-dfd8-421e-8c80-b25848b0eb36": "UpToDate", "$$339768b4-e5e3-49ee-88fa-4e5ec799243b": "UpToDate"}, "Note": None, "IsUpToDate": False, "Exported": True, "Retained": True, "CurrentStateExported": False, "IsDataModelValid": True, "HasRetainedData": True, "HasBeenSolved": True, "UpdateOrder": 1}</member-data>
+        <member-data valType="String">{"DisplayText": "DP 0", "JustDuplicated": False, "PartiallyRetainedData": [], "ValidRetainedData": [], "ErrorsOnLastUpdate": {}, "LastUpdateInformation": {"DidUpdate": "True", "DidPreRsmUpdate": "False"}, "Parameters": {}, "ParameterErrors": {}, "CurrentValues": {}, "ParameterStatus": {}, "Note": None, "IsUpToDate": True, "Exported": True, "Retained": True, "CurrentStateExported": False, "IsDataModelValid": True, "HasRetainedData": True, "HasBeenSolved": True, "UpdateOrder": 1}</member-data>
         <properties-setByUserFlag-data valType="String">["IsDataModelValid"]</properties-setByUserFlag-data>
       </Object>
       <Object Name="/Parameters/DesignPointReportSetting:Design Points Report Setting" Version="1.0">
@@ -315,32 +312,7 @@
         <object-name valType="String">Design Points Report Setting</object-name>
         <member-data valType="String">{"DisplayText": "Design Points Report Setting", "DesignPointReportImage": "None"}</member-data>
       </Object>
-      <Object Name="/Parameters/Parameter:P1" Version="1.0">
-        <class-type valType="String">Parameter</class-type>
-        <object-name valType="String">P1</object-name>
-        <member-data valType="String">{"DisplayText": "Convection 2 Film Coefficient", "PersistedNamedValueEntityReference": None, "Expression": "20 [W m^-2 C^-1]", "Usage": "Input", "IsParameter": True, "Scope": None, "SystemData": {}, "SerializedNamedExpression": None, "Description": None, "ErrorMessage": None, "HasRemovedLinksFromMigration": False, "Value": {"__FRAMEWORK_ANY_SPEC__": "Ansys.Core.DataSpecs.QuantitySpec", "value": "20 [W m^-2 C^-1]"}, "ValueSpec": {"SpecType": "Ansys.Core.DataSpecs.QuantitySpec, Ans.Core", "Access": "UserWritable", "CanUndoPropertyChanges": True, "Default": "20 [W m^-2 C^-1]", "Exposure": "AnyUser", "IsOptional": False, "IsPersistent": True, "IsReadOnly": False, "Usage": "Input", "IsDesignPointInvariant": False, "IsParameterizable": True, "ReuseJournalVariables": False, "UndefinedValue": "1.79769313486231E+308", "QuantityName": "Heat Transfer Coefficient"}}</member-data>
-      </Object>
-      <Object Name="/Parameters/Parameter:P2" Version="1.0">
-        <class-type valType="String">Parameter</class-type>
-        <object-name valType="String">P2</object-name>
-        <member-data valType="String">{"DisplayText": "Convection Film Coefficient", "PersistedNamedValueEntityReference": None, "Expression": "3.8 [W m^-2 C^-1]", "Usage": "Input", "IsParameter": True, "Scope": None, "SystemData": {}, "SerializedNamedExpression": None, "Description": None, "ErrorMessage": None, "HasRemovedLinksFromMigration": False, "Value": {"__FRAMEWORK_ANY_SPEC__": "Ansys.Core.DataSpecs.QuantitySpec", "value": "3.8 [W m^-2 C^-1]"}, "ValueSpec": {"SpecType": "Ansys.Core.DataSpecs.QuantitySpec, Ans.Core", "Access": "UserWritable", "CanUndoPropertyChanges": True, "Default": "3.8 [W m^-2 C^-1]", "Exposure": "AnyUser", "IsOptional": False, "IsPersistent": True, "IsReadOnly": False, "Usage": "Input", "IsDesignPointInvariant": False, "IsParameterizable": True, "ReuseJournalVariables": False, "UndefinedValue": "1.79769313486231E+308", "QuantityName": "Heat Transfer Coefficient"}}</member-data>
-      </Object>
-      <ParameterToPropertyMap>
-        <Parameter Name="/Parameters/Parameter:P1">
-          <ParameterReference valType="String">876d3998-dfd8-421e-8c80-b25848b0eb36</ParameterReference>
-          <LinkedEntityProperty>
-            <EntityReference valType="String">08687d9b-01ee-4618-8022-40baec04af47</EntityReference>
-            <Property valType="String">Value</Property>
-          </LinkedEntityProperty>
-        </Parameter>
-        <Parameter Name="/Parameters/Parameter:P2">
-          <ParameterReference valType="String">339768b4-e5e3-49ee-88fa-4e5ec799243b</ParameterReference>
-          <LinkedEntityProperty>
-            <EntityReference valType="String">fd7c6daa-4f95-48be-a9ae-6095ce84a3b1</EntityReference>
-            <Property valType="String">Value</Property>
-          </LinkedEntityProperty>
-        </Parameter>
-      </ParameterToPropertyMap>
+      <ParameterToPropertyMap />
     </Container>
     <Container Name="Schematic" Version="1.0">
       <container-type valType="String">Ansys.ProjectSchematic.ProjectSchematicAddin:Default</container-type>
@@ -348,7 +320,7 @@
       <storage-scheme-id valType="String">version-1-format</storage-scheme-id>
       <deleted-sources valType="String">[]</deleted-sources>
       <last-updated valType="Int64">0</last-updated>
-      <last-modified-by-usage valType="String">{"Extrinsic": 6052, "Input": 5052, "Output": 3885}</last-modified-by-usage>
+      <last-modified-by-usage valType="String">{"Extrinsic": 6771, "Input": 5052, "Output": 3885}</last-modified-by-usage>
       <outputs-generated-by-type valType="String">{}</outputs-generated-by-type>
       <contains-significant-data valType="Boolean">false</contains-significant-data>
       <Object Name="/Schematic/System:SYS" Version="1.0">
@@ -463,7 +435,7 @@
       <storage-scheme-id valType="String">version-1-format</storage-scheme-id>
       <deleted-sources valType="String">[]</deleted-sources>
       <last-updated valType="Int64">0</last-updated>
-      <last-modified-by-usage valType="String">{"Extrinsic": 5725, "Input": 4222, "Output": 4222}</last-modified-by-usage>
+      <last-modified-by-usage valType="String">{"Extrinsic": 6746, "Input": 4222, "Output": 4222}</last-modified-by-usage>
       <outputs-generated-by-type valType="String">{}</outputs-generated-by-type>
       <contains-significant-data valType="Boolean">false</contains-significant-data>
     </Container>
@@ -484,7 +456,7 @@
       <Object Name="/Units/UnitSystem:UnitSys" Version="1.0">
         <class-type valType="String">UnitSystem</class-type>
         <object-name valType="String">UnitSys</object-name>
-        <member-data valType="String">{"DisplayText": "Metric (kg,m,s,°C,A,N,V)", "ChangedQuantityUnits": {"Density Derivative wrt Temperature": "kg m^-3 C^-1", "Energy Source Coefficient": "W m^-3 C^-1", "Heat Transfer Coefficient": "W m^-2 C^-1", "Molar Entropy": "J mol^-1 C^-1", "Piezoelectric Strain Coefficient": "A s N^-1", "Piezoelectric Stress Coefficient": "A s m^-2", "Pressure Derivative wrt Temperature": "Pa C^-1", "Seebeck Coefficient": "V C^-1", "Specific Entropy": "J kg^-1 C^-1", "Specific Heat Capacity": "J kg^-1 C^-1", "Stress Per Temperature": "Pa C^-1", "Temperature": "C", "Temperature Difference": "C", "Temperature Gradient": "C m^-1", "InvTemp1": "C^-1", "InvTemp2": "C^-2", "InvTemp3": "C^-3", "InvTemp4": "C^-4", "Thermal Capacitance": "J C^-1", "Thermal Compliance": "W C", "Thermal Conductance": "W C^-1", "Thermal Conductivity": "W m^-1 C^-1", "Thermal Contact Resistance": "W^-1 m^2 C", "Thermal Expansivity": "C^-1"}, "UnitSystemName": "MKS_STANDARD", "BaseUnitSystemName": "SI", "IsProjectUnitSystem": True, "IsDefault": False}</member-data>
+        <member-data valType="String">{"DisplayText": "Metric (kg,m,s,°C,A,N,V)", "ChangedQuantityUnits": {}, "UnitSystemName": "MKS_STANDARD", "BaseUnitSystemName": "SI", "IsProjectUnitSystem": True, "IsDefault": False}</member-data>
       </Object>
     </Container>
     <Container Name="DpdbContainer" Version="1.0">
@@ -493,7 +465,7 @@
       <storage-scheme-id valType="String">version-1-format</storage-scheme-id>
       <deleted-sources valType="String">[]</deleted-sources>
       <last-updated valType="Int64">0</last-updated>
-      <last-modified-by-usage valType="String">{"Extrinsic": 6303, "Input": 4226, "Output": 4226}</last-modified-by-usage>
+      <last-modified-by-usage valType="String">{"Extrinsic": 6850, "Input": 4226, "Output": 4226}</last-modified-by-usage>
       <outputs-generated-by-type valType="String">{}</outputs-generated-by-type>
       <contains-significant-data valType="Boolean">false</contains-significant-data>
       <Object Name="/DpdbContainer/DpdbSettings:Dpdb Settings Entity" Version="1.0">

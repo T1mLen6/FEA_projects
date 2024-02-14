@@ -1,0 +1,124 @@
+# encoding: utf-8
+# 2023 R2
+SetScriptVersion(Version="23.2.142")
+fileType1 = GetFileType(Name="GeometryFileType")
+ImportFile(
+    FilePath="E:/GitHub_repos/FEA_projects/HW2/elbow.scdoc",
+    FileType=fileType1)
+template1 = GetTemplate(
+    TemplateName="Steady-State Thermal",
+    Solver="ANSYS")
+system1 = GetSystem(Name="Geometry")
+system2 = template1.CreateSystem(
+    Position="Right",
+    RelativeTo=system1)
+geometryComponent1 = system2.GetComponent(Name="Geometry")
+geometryComponent2 = system1.GetComponent(Name="Geometry")
+geometryComponent1.ReplaceWithShare(
+    TargetSystem=system2,
+    ComponentToShare=geometryComponent2,
+    SourceSystem=system1)
+modelComponent1 = system2.GetComponent(Name="Model")
+modelComponent1.Refresh()
+model1 = system2.GetContainer(ComponentName="Model")
+model1.Edit()
+favorites1 = EngData.LoadFavoriteItems()
+EngData.EnableFilter(Enable=False)
+EngData.EnableFilter()
+engineeringData1 = system2.GetContainer(ComponentName="Engineering Data")
+matl1 = engineeringData1.CreateMaterial(Name="cast iron")
+matl1.Delete()
+EngData.EnableFilter(Enable=False)
+matl2 = engineeringData1.CreateMaterial(Name="Structural Steel")
+material1 = engineeringData1.GetMaterial(Name="Structural Steel")
+material1.SetColor(
+    Red=132,
+    Green=139,
+    Blue=179)
+material1.Description = ""
+material1.Delete()
+material2 = engineeringData1.GetMaterial(Name="Gray Cast Iron 2")
+material2.Delete()
+material3 = engineeringData1.GetMaterial(Name="Gray Cast Iron 2")
+material3.Delete()
+material4 = engineeringData1.GetMaterial(Name="Gray Cast Iron")
+matlProp1 = material4.CreateProperty(
+    Name="Thermal Conductivity",
+    Behavior="Orthotropic",
+    Qualifiers={"Definition": "", "Behavior": "Orthotropic"})
+matlProp1.Delete(Behavior="Orthotropic")
+materialPropertyData1 = matlProp1.GetPropertyData(
+    Name="Thermal Conductivity",
+    Qualifiers={"Definition": "", "Behavior": "Isotropic"})
+materialPropertyData1.SetSuppression(Suppressed=False)
+matlProp1.SetData(
+    SheetName="Thermal Conductivity",
+    SheetQualifiers={"Definition": "", "Behavior": "Isotropic"},
+    Variables=["Thermal Conductivity"],
+    Values=[["51.6 [W m^-1 C^-1]"]])
+matlProp1.SetData(
+    SheetName="Thermal Conductivity",
+    SheetQualifiers={"Definition": "", "Behavior": "Isotropic"},
+    Index=-1,
+    Variables=["Temperature"],
+    Values=[["100 [C]"]])
+matlProp1.SetData(
+    SheetName="Thermal Conductivity",
+    SheetQualifiers={"Definition": "", "Behavior": "Isotropic"},
+    Index=1,
+    Variables=["Thermal Conductivity"],
+    Values=[["50.8 [W m^-1 C^-1]"]])
+matlProp1.SetData(
+    SheetName="Thermal Conductivity",
+    SheetQualifiers={"Definition": "", "Behavior": "Isotropic"},
+    Index=-1,
+    Variables=["Temperature"],
+    Values=[["200 [C]"]])
+matlProp1.SetData(
+    SheetName="Thermal Conductivity",
+    SheetQualifiers={"Definition": "", "Behavior": "Isotropic"},
+    Index=-1,
+    Variables=["Temperature"],
+    Values=[["300 [C]"]])
+matlProp1.SetData(
+    SheetName="Thermal Conductivity",
+    SheetQualifiers={"Definition": "", "Behavior": "Isotropic"},
+    Index=-1,
+    Variables=["Temperature"],
+    Values=[["400 [C]"]])
+matlProp1.SetData(
+    SheetName="Thermal Conductivity",
+    SheetQualifiers={"Definition": "", "Behavior": "Isotropic"},
+    Index=-1,
+    Variables=["Temperature"],
+    Values=[["500 [C]"]])
+matlProp1.SetData(
+    SheetName="Thermal Conductivity",
+    SheetQualifiers={"Definition": "", "Behavior": "Isotropic"},
+    Index=2,
+    Variables=["Thermal Conductivity"],
+    Values=[["49.8 [W m^-1 C^-1]"]])
+matlProp1.SetData(
+    SheetName="Thermal Conductivity",
+    SheetQualifiers={"Definition": "", "Behavior": "Isotropic"},
+    Index=3,
+    Variables=["Thermal Conductivity"],
+    Values=[["48.8 [W m^-1 C^-1]"]])
+matlProp1.SetData(
+    SheetName="Thermal Conductivity",
+    SheetQualifiers={"Definition": "", "Behavior": "Isotropic"},
+    Index=4,
+    Variables=["Thermal Conductivity"],
+    Values=[["47.8 [W m^-1 C^-1]"]])
+matlProp1.SetData(
+    SheetName="Thermal Conductivity",
+    SheetQualifiers={"Definition": "", "Behavior": "Isotropic"},
+    Index=5,
+    Variables=["Thermal Conductivity"],
+    Values=[["46.8 [W m^-1 C^-1]"]])
+Save(Overwrite=True)
+Save(Overwrite=True)
+Save(Overwrite=True)
+Save(Overwrite=True)
+Save(Overwrite=True)
+Save(Overwrite=True)
