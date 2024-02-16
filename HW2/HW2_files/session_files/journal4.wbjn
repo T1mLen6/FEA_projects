@@ -1,0 +1,160 @@
+# encoding: utf-8
+# 2023 R2
+SetScriptVersion(Version="23.2.142")
+system1 = GetSystem(Name="Geometry")
+geometry1 = system1.GetContainer(ComponentName="Geometry")
+geometry1.SetFile(FilePath="E:/GitHub_repos/FEA_projects/HW2/elbow+4.scdoc")
+system2 = GetSystem(Name="SYS")
+system2.Update(AllDependencies=True)
+model1 = system2.GetContainer(ComponentName="Model")
+model1.Edit()
+geometry1.Edit(IsSpaceClaimGeometry=True)
+Save(Overwrite=True)
+geometryComponent1 = system1.GetComponent(Name="Geometry")
+geometryComponent1.Update(AllDependencies=True)
+Save(Overwrite=True)
+engineeringData1 = system2.GetContainer(ComponentName="Engineering Data")
+matl1 = engineeringData1.CreateMaterial(Name="Insulation")
+matlProp1 = matl1.CreateProperty(
+    Name="Thermal Conductivity",
+    Behavior="Isotropic",
+    Qualifiers={"Definition": "", "Behavior": "Isotropic"})
+matlProp1.SetData(
+    Index=-1,
+    Variables=["Thermal Conductivity"],
+    Values=[["0.2 [W m^-1 C^-1]"]])
+matlProp2 = matl1.CreateProperty(
+    Name="Thermal Conductivity",
+    Behavior="Orthotropic",
+    Qualifiers={"Definition": "", "Behavior": "Orthotropic"})
+matlProp2.Delete(Behavior="Orthotropic")
+matlProp2.Delete(Behavior="Isotropic")
+matlProp3 = matl1.CreateProperty(
+    Name="Thermal Conductivity",
+    Behavior="Isotropic",
+    Qualifiers={"Definition": "", "Behavior": "Isotropic"})
+matlProp3.SetData(
+    Index=-1,
+    Variables=["Thermal Conductivity"],
+    Values=[["0.2 [W m^-1 C^-1]"]])
+favorites1 = EngData.LoadFavoriteItems()
+library1 = EngData.OpenLibrary(
+    Name="ANSYS GRANTA Materials Data for Simulation (Sample)",
+    Source="Granta_Design_Typical_Materials.xml")
+matlProp4 = matl1.CreateProperty(
+    Name="Insulation",
+    Qualifiers={"UserMat": "USER"},
+    CustomData={})
+matlPropData1 = matlProp4.CreatePropertyData(
+    Name="Model Coefficients",
+    Definition="",
+    Behavior="",
+    Qualifiers={"UserMat": "USER"},
+    CustomData={})
+PropertyDataVariable1 = matlPropData1.CreateVariable(
+    Name="Temperature",
+    Qualifiers={"Display": "True", "UserMat Constant": "1"},
+    CustomData={"Quantity Type": None, "Data": "7.88860905221012E-31", "Independent": "True", "Units": "C"})
+PropertyDataVariable2 = matlPropData1.CreateVariable(
+    Name="Density",
+    Qualifiers={"Display": "True", "UserMat Constant": "2"},
+    CustomData={"Quantity Type": "Density", "Data": "2500", "Independent": "False", "Units": "kg m^-3"})
+PropertyDataVariable3 = matlPropData1.CreateVariable(
+    Name="Specific Heat Properties",
+    Qualifiers={"Display": "True", "UserMat Constant": "3"},
+    CustomData={"Quantity Type": "Specific Heat Capacity", "Data": "840", "Independent": "False", "Units": "J kg^-1 C^-1"})
+matlProp4.Delete()
+matlProp5 = matl1.CreateProperty(
+    Name="Density",
+    Qualifiers={"UserMat": "USER"},
+    CustomData={})
+matlPropData2 = matlProp5.CreatePropertyData(
+    Name="Model Coefficients",
+    Definition="",
+    Behavior="",
+    Qualifiers={"UserMat": "USER"},
+    CustomData={})
+PropertyDataVariable4 = matlPropData2.CreateVariable(
+    Name="Temperature",
+    Qualifiers={"Display": "True", "UserMat Constant": "1"},
+    CustomData={"Quantity Type": None, "Data": "7.88860905221012E-31", "Independent": "True", "Units": "C"})
+PropertyDataVariable5 = matlPropData2.CreateVariable(
+    Name="Density",
+    Qualifiers={"Display": "True", "UserMat Constant": "2"},
+    CustomData={"Quantity Type": "Density", "Data": "2500", "Independent": "False", "Units": "kg m^-3"})
+matlProp6 = matl1.CreateProperty(
+    Name="Specific Heat Properties",
+    Qualifiers={"UserMat": "USER"},
+    CustomData={})
+matlPropData3 = matlProp6.CreatePropertyData(
+    Name="Model Coefficients",
+    Definition="",
+    Behavior="",
+    Qualifiers={"UserMat": "USER"},
+    CustomData={})
+PropertyDataVariable6 = matlPropData3.CreateVariable(
+    Name="Temperature",
+    Qualifiers={"Display": "True", "UserMat Constant": "1"},
+    CustomData={"Quantity Type": None, "Data": "7.88860905221012E-31", "Independent": "True", "Units": "C"})
+PropertyDataVariable7 = matlPropData3.CreateVariable(
+    Name="Specific Heat Properties",
+    Qualifiers={"Display": "True", "UserMat Constant": "5"},
+    CustomData={"Quantity Type": "Specific Heat Capacity", "Data": "840", "Independent": "False", "Units": "J kg^-1 C^-1"})
+engineeringDataComponent1 = system2.GetComponent(Name="Engineering Data")
+engineeringDataComponent1.Update(AllDependencies=True)
+modelComponent1 = system2.GetComponent(Name="Model")
+modelComponent1.Update(AllDependencies=True)
+modelComponent1.Update(AllDependencies=True)
+matlProp5.Delete()
+matlProp7 = matl1.CreateProperty(
+    Name="Density",
+    Qualifiers={"UserMat": "USER"},
+    CustomData={})
+matlPropData4 = matlProp7.CreatePropertyData(
+    Name="Model Coefficients",
+    Definition="",
+    Behavior="",
+    Qualifiers={"UserMat": "USER"},
+    CustomData={})
+PropertyDataVariable8 = matlPropData4.CreateVariable(
+    Name="Temperature",
+    Qualifiers={"Display": "True", "UserMat Constant": "1"},
+    CustomData={"Quantity Type": None, "Data": "7.88860905221012E-31", "Independent": "True", "Units": "C"})
+PropertyDataVariable9 = matlPropData4.CreateVariable(
+    Name="Density",
+    Qualifiers={"Display": "True", "UserMat Constant": "2"},
+    CustomData={"Quantity Type": "Density", "Data": "2500", "Independent": "False", "Units": "kg m^-3"})
+template1 = GetTemplate(
+    TemplateName="Transient Thermal",
+    Solver="ANSYS")
+system3 = template1.CreateSystem()
+system3.Delete()
+material1 = engineeringData1.GetMaterial(Name="Gray Cast Iron")
+matlProp8 = material1.CreateProperty(
+    Name="Specific Heat Properties",
+    Qualifiers={"UserMat": "USER"},
+    CustomData={})
+matlPropData5 = matlProp8.CreatePropertyData(
+    Name="Model Coefficients",
+    Definition="",
+    Behavior="",
+    Qualifiers={"UserMat": "USER"},
+    CustomData={})
+PropertyDataVariable10 = matlPropData5.CreateVariable(
+    Name="Temperature",
+    Qualifiers={"Display": "True", "UserMat Constant": "1"},
+    CustomData={"Quantity Type": None, "Data": "7.88860905221012E-31", "Independent": "True", "Units": "C"})
+PropertyDataVariable11 = matlPropData5.CreateVariable(
+    Name="Specific Heat Properties",
+    Qualifiers={"Display": "True", "UserMat Constant": "5"},
+    CustomData={"Quantity Type": "Specific Heat Capacity", "Data": "840", "Independent": "False", "Units": "J kg^-1 C^-1"})
+matlProp8.Delete()
+modelComponent1.Update(AllDependencies=True)
+setupComponent1 = system2.GetComponent(Name="Setup")
+setupComponent1.Update(AllDependencies=True)
+engineeringDataComponent1.Update(AllDependencies=True)
+matlProp7.Delete()
+matlProp6.Delete()
+modelComponent1.Update(AllDependencies=True)
+setupComponent1.Update(AllDependencies=True)
+model1.Edit()
