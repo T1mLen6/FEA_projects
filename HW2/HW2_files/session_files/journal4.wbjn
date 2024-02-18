@@ -158,3 +158,111 @@ matlProp6.Delete()
 modelComponent1.Update(AllDependencies=True)
 setupComponent1.Update(AllDependencies=True)
 model1.Edit()
+geometry1.Exit()
+geometry1.SetFile(FilePath="E:/GitHub_repos/FEA_projects/HW2/elbow.scdoc")
+modelComponent1.Refresh()
+model1.Edit()
+model1.Exit()
+template2 = GetTemplate(
+    TemplateName="Steady-State Thermal",
+    Solver="ANSYS")
+system4 = template2.CreateSystem(
+    Position="Right",
+    RelativeTo=system2)
+engineeringDataComponent2 = system4.GetComponent(Name="Engineering Data")
+engineeringDataComponent2.ReplaceWithShare(
+    TargetSystem=system4,
+    ComponentToShare=engineeringDataComponent1,
+    SourceSystem=system2)
+system5 = template2.CreateSystem(
+    Position="Right",
+    RelativeTo=system4)
+system6 = template2.CreateSystem(
+    Position="Above",
+    RelativeTo=system4)
+system7 = template2.CreateSystem(
+    Position="Above",
+    RelativeTo=system6)
+system8 = template2.CreateSystem(
+    Position="Above",
+    RelativeTo=system7)
+system5.Copy(KeepConnections=True)
+system5.Delete()
+system9 = template2.CreateSystem(
+    Position="Above",
+    RelativeTo=system8)
+system10 = GetSystem(Name="SYS 6")
+system10.Delete()
+engineeringDataComponent3 = system9.GetComponent(Name="Engineering Data")
+engineeringDataComponent3.ReplaceWithShare(
+    TargetSystem=system9,
+    ComponentToShare=engineeringDataComponent1,
+    SourceSystem=system2)
+engineeringDataComponent4 = system8.GetComponent(Name="Engineering Data")
+engineeringDataComponent4.ReplaceWithShare(
+    TargetSystem=system8,
+    ComponentToShare=engineeringDataComponent1,
+    SourceSystem=system2)
+engineeringDataComponent5 = system7.GetComponent(Name="Engineering Data")
+engineeringDataComponent5.ReplaceWithShare(
+    TargetSystem=system7,
+    ComponentToShare=engineeringDataComponent1,
+    SourceSystem=system2)
+engineeringDataComponent6 = system6.GetComponent(Name="Engineering Data")
+engineeringDataComponent6.ReplaceWithShare(
+    TargetSystem=system6,
+    ComponentToShare=engineeringDataComponent1,
+    SourceSystem=system2)
+geometry2 = system9.GetContainer(ComponentName="Geometry")
+geometry2.SetFile(FilePath="E:/GitHub_repos/FEA_projects/HW2/elbow.scdoc")
+geometry3 = system8.GetContainer(ComponentName="Geometry")
+geometry3.SetFile(FilePath="E:/GitHub_repos/FEA_projects/HW2/elbow+8.scdoc")
+geometry4 = system7.GetContainer(ComponentName="Geometry")
+geometry4.SetFile(FilePath="E:/GitHub_repos/FEA_projects/HW2/elbow+12.scdoc")
+geometry5 = system6.GetContainer(ComponentName="Geometry")
+geometry5.SetFile(FilePath="E:/GitHub_repos/FEA_projects/HW2/elbow+12.scdoc")
+geometry5.SetFile(FilePath="E:/GitHub_repos/FEA_projects/HW2/elbow+14.scdoc")
+modelComponent2 = system9.GetComponent(Name="Model")
+modelComponent2.Refresh()
+model2 = system9.GetContainer(ComponentName="Model")
+model2.Edit()
+Save(Overwrite=True)
+Save(Overwrite=True)
+model2.Exit()
+modelComponent3 = system8.GetComponent(Name="Model")
+modelComponent3.Refresh()
+model3 = system8.GetContainer(ComponentName="Model")
+model3.Edit()
+geometry3.SetFile(FilePath="E:/GitHub_repos/FEA_projects/HW2/elbow+8.scdoc")
+modelComponent3.Update(AllDependencies=True)
+Save(Overwrite=True)
+model3.Exit()
+modelComponent4 = system7.GetComponent(Name="Model")
+modelComponent4.Refresh()
+model4 = system7.GetContainer(ComponentName="Model")
+model4.Edit()
+Save(Overwrite=True)
+Save(Overwrite=True)
+model4.Exit()
+modelComponent5 = system6.GetComponent(Name="Model")
+modelComponent5.Refresh()
+model5 = system6.GetContainer(ComponentName="Model")
+model5.Edit()
+Save(Overwrite=True)
+model5.Exit()
+geometry6 = system4.GetContainer(ComponentName="Geometry")
+geometry6.SetFile(FilePath="E:/GitHub_repos/FEA_projects/HW2/elbow+20.scdoc")
+modelComponent6 = system4.GetComponent(Name="Model")
+modelComponent6.Refresh()
+model6 = system4.GetContainer(ComponentName="Model")
+model6.Edit()
+model6.Exit()
+geometry6.SetFile(FilePath="E:/GitHub_repos/FEA_projects/HW2/elbow+24.scdoc")
+modelComponent6.Update(AllDependencies=True)
+model6.Edit()
+geometryComponent2 = system4.GetComponent(Name="Geometry")
+geometryComponent2.Update(AllDependencies=True)
+modelComponent6.Update(AllDependencies=True)
+model3.Edit()
+model3.Exit()
+Save(Overwrite=True)
