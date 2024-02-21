@@ -1,0 +1,23 @@
+# encoding: utf-8
+# 2023 R2
+SetScriptVersion(Version="23.2.142")
+template1 = GetTemplate(
+    TemplateName="Static Structural",
+    Solver="ANSYS")
+system1 = template1.CreateSystem()
+geometry1 = system1.GetContainer(ComponentName="Geometry")
+geometry1.SetFile(FilePath="E:/GitHub_repos/FEA_projects/HW3/Valve-1.scdoc")
+modelComponent1 = system1.GetComponent(Name="Model")
+modelComponent1.Refresh()
+model1 = system1.GetContainer(ComponentName="Model")
+model1.Edit()
+geometry1.Edit(IsSpaceClaimGeometry=True)
+geometry1.SetFile(FilePath="E:/GitHub_repos/FEA_projects/HW3/Valve-1_0.25sym.scdoc")
+geometryComponent1 = system1.GetComponent(Name="Geometry")
+geometryComponent1.Update(AllDependencies=True)
+modelComponent1.Update(AllDependencies=True)
+geometry1.Edit(IsSpaceClaimGeometry=True)
+geometry1.Exit()
+geometryComponent1.Update(AllDependencies=True)
+modelComponent1.Update(AllDependencies=True)
+Save(Overwrite=True)

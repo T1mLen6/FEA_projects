@@ -1,0 +1,30 @@
+/COM,ANSYS RELEASE 2023 R2           BUILD 23.2      UP20230531       02:02:39
+
+ *** WARNING ***                         CP =       0.422   TIME= 02:02:39
+ Element shape checking is currently inactive.  Issue SHPP,ON or         
+ SHPP,WARN to reactivate, if desired.                                    
+
+ *** WARNING ***                         CP =       0.547   TIME= 02:02:39
+ Material number 2 (used by element 26555) should normally have at least 
+ one MP or one TB type command associated with it.  Output of energy by  
+ material may not be available.                                          
+
+ *** WARNING ***                         CP =      14.641   TIME= 02:02:43
+ Material number 2 (used by element 26555) should normally have at least 
+ one MP or one TB type command associated with it.  Output of energy by  
+ material may not be available.                                          
+
+ *** WARNING ***                         CP =      18.391   TIME= 02:02:44
+ Material number 2 (used by element 26555) should normally have at least 
+ one MP or one TB type command associated with it.  Output of energy by  
+ material may not be available.                                          
+
+ *** WARNING ***                         CP =      22.047   TIME= 02:02:45
+ Material number 2 (used by element 26555) should normally have at least 
+ one MP or one TB type command associated with it.  Output of energy by  
+ material may not be available.                                          
+
+ *** WARNING ***                         CP =      25.875   TIME= 02:02:46
+ Material number 2 (used by element 26555) should normally have at least 
+ one MP or one TB type command associated with it.  Output of energy by  
+ material may not be available.                                          
