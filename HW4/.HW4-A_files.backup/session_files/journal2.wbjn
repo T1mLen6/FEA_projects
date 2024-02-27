@@ -1,0 +1,23 @@
+# encoding: utf-8
+# 2023 R2
+SetScriptVersion(Version="23.2.142")
+system1 = GetSystem(Name="SYS")
+engineeringData1 = system1.GetContainer(ComponentName="Engineering Data")
+matl1 = engineeringData1.CreateMaterial(Name="DUDDU")
+matlProp1 = matl1.CreateProperty(
+    Name="Density",
+    Qualifiers={"Definition": "", "Behavior": ""})
+favorites1 = EngData.LoadFavoriteItems()
+EngData.EnableFilter(Enable=False)
+EngData.EnableFilter()
+matlProp2 = matl1.CreateProperty(
+    Name="Elasticity",
+    Behavior="Isotropic",
+    Qualifiers={"Definition": "", "Behavior": "Isotropic"})
+matlProp2.SetData(
+    SheetName="Elasticity",
+    SheetQualifiers={"Definition": "", "Behavior": "Isotropic", "Derive from": "Young's Modulus and Poisson's Ratio"},
+    Index=-1,
+    Variables=["Young's Modulus"],
+    Values=[["200 [Pa]"]])
+Save(Overwrite=True)

@@ -1,0 +1,12 @@
+﻿# 
+# This file contains the parameter values of the Design Points successfully updated by Ansys Workbench.
+# Project name: HW3-A
+# Creation date: 02/26/2024 23:05:22
+# 
+# 02/26/2024 23:05:22
+# The parameters defined in the project are:
+# ,P1 - Group1 [in]
+# 
+# The following header line defines the name of the columns by reference to the parameters.
+Name,P1
+DP 0,3.0000000000000004
