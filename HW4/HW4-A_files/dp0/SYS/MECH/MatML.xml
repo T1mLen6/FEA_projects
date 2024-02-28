@@ -6,7 +6,7 @@
     <MatML_Doc>
       <Material>
         <BulkDetails>
-          <Name>Structural Steel</Name>
+          <Name>Structural Steel 2</Name>
           <Description>Fatigue Data at zero mean stress comes from 1998 ASME BPV Code, Section 8, Div 2, Table 5-110.1</Description>
           <Class>
             <Name>Alloy</Name>
@@ -206,18 +206,18 @@
             <Qualifier name="Field Variable Compatible">Mean Stress</Qualifier>
             <Qualifier name="Localized Name">S-N Curve</Qualifier>
             <ParameterValue parameter="pa15" format="float">
-              <Data>3999000000,2827000000,1896000000,1413000000,1069000000,441000000,262000000,214000000,138000000,114000000,86200000</Data>
-              <Qualifier name="Variable Type">Dependent,Dependent,Dependent,Dependent,Dependent,Dependent,Dependent,Dependent,Dependent,Dependent,Dependent</Qualifier>
+              <Data>1500000000,420000000,90000000</Data>
+              <Qualifier name="Variable Type">Dependent,Dependent,Dependent</Qualifier>
               <Qualifier name="Localized Name">Alternating Stress</Qualifier>
             </ParameterValue>
             <ParameterValue parameter="pa16" format="float">
-              <Data>10,20,50,100,200,2000,10000,20000,100000,200000,1000000</Data>
-              <Qualifier name="Variable Type">Independent,Independent,Independent,Independent,Independent,Independent,Independent,Independent,Independent,Independent,Independent</Qualifier>
+              <Data>100,1000,1000000</Data>
+              <Qualifier name="Variable Type">Independent,Independent,Independent</Qualifier>
               <Qualifier name="Localized Name">Cycles</Qualifier>
             </ParameterValue>
             <ParameterValue parameter="pa17" format="float">
-              <Data>0,0,0,0,0,0,0,0,0,0,0</Data>
-              <Qualifier name="Variable Type">Independent,Independent,Independent,Independent,Independent,Independent,Independent,Independent,Independent,Independent,Independent</Qualifier>
+              <Data>0,0,0</Data>
+              <Qualifier name="Variable Type">Independent,Independent,Independent</Qualifier>
               <Qualifier name="Localized Name">Mean Stress</Qualifier>
               <Qualifier name="Field Variable">Mean Stress</Qualifier>
               <Qualifier name="Default Data">0</Qualifier>
@@ -333,7 +333,7 @@
           </PropertyData>
           <PropertyData property="pr15">
             <Data format="string">-</Data>
-            <Qualifier name="guid">59002a79-71c2-428e-906b-55d7dbee100e</Qualifier>
+            <Qualifier name="guid">013755cf-9d96-485e-a989-621803b61fc0</Qualifier>
             <Qualifier name="Localized Name">Material Unique Id</Qualifier>
             <Qualifier name="Display">False</Qualifier>
           </PropertyData>
@@ -636,8 +636,8 @@
   <ANSYSWBTransferData>
     <Materials>
       <Material>
-        <Name>Structural Steel</Name>
-        <DataTransferID>efe2b501-ccf1-4692-b8e6-3dece702d122</DataTransferID>
+        <Name>Structural Steel 2</Name>
+        <DataTransferID>5169cbe1-074e-43c5-a2bc-e9542d335c98</DataTransferID>
         <PreviousTransferIDs>
         </PreviousTransferIDs>
       </Material>
