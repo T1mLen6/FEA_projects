@@ -201,7 +201,7 @@
             <Qualifier name="Interpolation">Log-Log</Qualifier>
             <Qualifier name="Field Variable Compatible">Mean Stress</Qualifier>
             <Qualifier name="Localized Name">S-N Curve</Qualifier>
-            <ParameterValue parameter="pa25" format="float">
+            <ParameterValue parameter="pa26" format="float">
               <Data>3999000000,2827000000,1896000000,1413000000,1069000000,441000000,262000000,214000000,138000000,114000000,86200000</Data>
               <Qualifier name="Variable Type">Dependent,Dependent,Dependent,Dependent,Dependent,Dependent,Dependent,Dependent,Dependent,Dependent,Dependent</Qualifier>
               <Qualifier name="Localized Name">Alternating Stress</Qualifier>
@@ -285,7 +285,7 @@
               <Qualifier name="ExtrapolationType">Projection to the Bounding Box</Qualifier>
               <Qualifier name="Localized Name">Interpolation Options</Qualifier>
             </ParameterValue>
-            <ParameterValue parameter="pa26" format="float">
+            <ParameterValue parameter="pa25" format="float">
               <Data>200000000000</Data>
               <Qualifier name="Variable Type">Dependent</Qualifier>
               <Qualifier name="Localized Name">Young's Modulus</Qualifier>
@@ -533,7 +533,7 @@
           </PropertyData>
           <PropertyData property="pr10">
             <Data format="string">-</Data>
-            <Qualifier name="Interpolation">Log-Log</Qualifier>
+            <Qualifier name="Interpolation">Semi-Log</Qualifier>
             <Qualifier name="Field Variable Compatible">Mean Stress</Qualifier>
             <Qualifier name="Localized Name">S-N Curve</Qualifier>
             <ParameterValue parameter="pa15" format="float">
@@ -620,7 +620,7 @@
               <Qualifier name="ExtrapolationType">Projection to the Bounding Box</Qualifier>
               <Qualifier name="Localized Name">Interpolation Options</Qualifier>
             </ParameterValue>
-            <ParameterValue parameter="pa26" format="float">
+            <ParameterValue parameter="pa25" format="float">
               <Data>200000000000</Data>
               <Qualifier name="Variable Type">Dependent</Qualifier>
               <Qualifier name="Localized Name">Young's Modulus</Qualifier>
@@ -754,22 +754,6 @@
             </Unit>
           </Units>
         </ParameterDetails>
-        <ParameterDetails id="pa25">
-          <Name>Alternating Stress</Name>
-          <Units name="Stress">
-            <Unit>
-              <Name>Pa</Name>
-            </Unit>
-          </Units>
-        </ParameterDetails>
-        <ParameterDetails id="pa5">
-          <Name>Compressive Yield Strength</Name>
-          <Units name="Stress">
-            <Unit>
-              <Name>Pa</Name>
-            </Unit>
-          </Units>
-        </ParameterDetails>
         <ParameterDetails id="pa13">
           <Name>Specific Heat</Name>
           <Units name="Specific Heat Capacity">
@@ -795,6 +779,34 @@
             </Unit>
             <Unit power="-1">
               <Name>C</Name>
+            </Unit>
+          </Units>
+        </ParameterDetails>
+        <ParameterDetails id="pa26">
+          <Name>Alternating Stress</Name>
+          <Units name="Stress">
+            <Unit>
+              <Name>Pa</Name>
+            </Unit>
+          </Units>
+        </ParameterDetails>
+        <ParameterDetails id="pa29">
+          <Name>Shear Modulus</Name>
+          <Units name="Stress">
+            <Unit>
+              <Name>Pa</Name>
+            </Unit>
+          </Units>
+        </ParameterDetails>
+        <ParameterDetails id="pa30">
+          <Name>Relative Permeability</Name>
+          <Unitless />
+        </ParameterDetails>
+        <ParameterDetails id="pa5">
+          <Name>Compressive Yield Strength</Name>
+          <Units name="Stress">
+            <Unit>
+              <Name>Pa</Name>
             </Unit>
           </Units>
         </ParameterDetails>
@@ -867,7 +879,7 @@
             </Unit>
           </Units>
         </ParameterDetails>
-        <ParameterDetails id="pa26">
+        <ParameterDetails id="pa25">
           <Name>Young's Modulus</Name>
           <Units name="Stress">
             <Unit>
@@ -886,18 +898,6 @@
               <Name>Pa</Name>
             </Unit>
           </Units>
-        </ParameterDetails>
-        <ParameterDetails id="pa29">
-          <Name>Shear Modulus</Name>
-          <Units name="Stress">
-            <Unit>
-              <Name>Pa</Name>
-            </Unit>
-          </Units>
-        </ParameterDetails>
-        <ParameterDetails id="pa30">
-          <Name>Relative Permeability</Name>
-          <Unitless />
         </ParameterDetails>
         <PropertyDetails id="pr0">
           <Unitless />

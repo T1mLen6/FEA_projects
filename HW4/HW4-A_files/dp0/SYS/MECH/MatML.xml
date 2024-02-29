@@ -202,7 +202,7 @@
           </PropertyData>
           <PropertyData property="pr10">
             <Data format="string">-</Data>
-            <Qualifier name="Interpolation">Log-Log</Qualifier>
+            <Qualifier name="Interpolation">Semi-Log</Qualifier>
             <Qualifier name="Field Variable Compatible">Mean Stress</Qualifier>
             <Qualifier name="Localized Name">S-N Curve</Qualifier>
             <ParameterValue parameter="pa15" format="float">

@@ -270,7 +270,7 @@
               <Qualifier name="Units">
               </Qualifier>
             </ParameterValue>
-            <ParameterValue parameter="pa20" format="float">
+            <ParameterValue parameter="pa21" format="float">
               <Data>0.213</Data>
               <Qualifier name="Variable Type">Dependent</Qualifier>
               <Qualifier name="Offset">0</Qualifier>
@@ -278,7 +278,7 @@
               <Qualifier name="Units">
               </Qualifier>
             </ParameterValue>
-            <ParameterValue parameter="pa21" format="float">
+            <ParameterValue parameter="pa22" format="float">
               <Data>-0.47</Data>
               <Qualifier name="Variable Type">Dependent</Qualifier>
               <Qualifier name="Offset">0</Qualifier>
@@ -286,14 +286,14 @@
               <Qualifier name="Units">
               </Qualifier>
             </ParameterValue>
-            <ParameterValue parameter="pa22" format="float">
+            <ParameterValue parameter="pa23" format="float">
               <Data>1000000000</Data>
               <Qualifier name="Variable Type">Dependent</Qualifier>
               <Qualifier name="Offset">0 [Pa]</Qualifier>
               <Qualifier name="Scale">1</Qualifier>
               <Qualifier name="Units">Pa</Qualifier>
             </ParameterValue>
-            <ParameterValue parameter="pa23" format="float">
+            <ParameterValue parameter="pa24" format="float">
               <Data>0.2</Data>
               <Qualifier name="Variable Type">Dependent</Qualifier>
               <Qualifier name="Offset">0</Qualifier>
@@ -305,7 +305,7 @@
           <PropertyData property="pr12">
             <Data format="string">-</Data>
             <Qualifier name="Behavior">Isotropic</Qualifier>
-            <ParameterValue parameter="pa24" format="float">
+            <ParameterValue parameter="pa25" format="float">
               <Data>1.7e-07</Data>
               <Qualifier name="Variable Type">Dependent</Qualifier>
               <Qualifier name="Offset">0 [ohm m]</Qualifier>
@@ -612,9 +612,9 @@
           </PropertyData>
           <PropertyData property="pr10">
             <Data format="string">-</Data>
-            <Qualifier name="Interpolation">Log-Log</Qualifier>
+            <Qualifier name="Interpolation">Semi-Log</Qualifier>
             <Qualifier name="Field Variable Compatible">Mean Stress</Qualifier>
-            <ParameterValue parameter="pa25" format="float">
+            <ParameterValue parameter="pa20" format="float">
               <Data>1500,420,90</Data>
               <Qualifier name="Variable Type">Dependent,Dependent,Dependent</Qualifier>
               <Qualifier name="Offset">0 [MPa],0 [MPa],0 [MPa]</Qualifier>
@@ -659,7 +659,7 @@
               <Qualifier name="Units">
               </Qualifier>
             </ParameterValue>
-            <ParameterValue parameter="pa20" format="float">
+            <ParameterValue parameter="pa21" format="float">
               <Data>0.213</Data>
               <Qualifier name="Variable Type">Dependent</Qualifier>
               <Qualifier name="Offset">0</Qualifier>
@@ -667,7 +667,7 @@
               <Qualifier name="Units">
               </Qualifier>
             </ParameterValue>
-            <ParameterValue parameter="pa21" format="float">
+            <ParameterValue parameter="pa22" format="float">
               <Data>-0.47</Data>
               <Qualifier name="Variable Type">Dependent</Qualifier>
               <Qualifier name="Offset">0</Qualifier>
@@ -675,14 +675,14 @@
               <Qualifier name="Units">
               </Qualifier>
             </ParameterValue>
-            <ParameterValue parameter="pa22" format="float">
+            <ParameterValue parameter="pa23" format="float">
               <Data>1000000000</Data>
               <Qualifier name="Variable Type">Dependent</Qualifier>
               <Qualifier name="Offset">0 [Pa]</Qualifier>
               <Qualifier name="Scale">1</Qualifier>
               <Qualifier name="Units">Pa</Qualifier>
             </ParameterValue>
-            <ParameterValue parameter="pa23" format="float">
+            <ParameterValue parameter="pa24" format="float">
               <Data>0.2</Data>
               <Qualifier name="Variable Type">Dependent</Qualifier>
               <Qualifier name="Offset">0</Qualifier>
@@ -694,7 +694,7 @@
           <PropertyData property="pr12">
             <Data format="string">-</Data>
             <Qualifier name="Behavior">Isotropic</Qualifier>
-            <ParameterValue parameter="pa24" format="float">
+            <ParameterValue parameter="pa25" format="float">
               <Data>1.7e-07</Data>
               <Qualifier name="Variable Type">Dependent</Qualifier>
               <Qualifier name="Offset">0 [ohm m]</Qualifier>
@@ -856,20 +856,20 @@
         <ParameterDetails id="pa19">
           <Name>Strength Exponent</Name>
         </ParameterDetails>
-        <ParameterDetails id="pa20">
+        <ParameterDetails id="pa21">
           <Name>Ductility Coefficient</Name>
         </ParameterDetails>
-        <ParameterDetails id="pa21">
+        <ParameterDetails id="pa22">
           <Name>Ductility Exponent</Name>
         </ParameterDetails>
-        <ParameterDetails id="pa22">
+        <ParameterDetails id="pa23">
           <Name>Cyclic Strength Coefficient</Name>
           <Units name="Stress" />
         </ParameterDetails>
-        <ParameterDetails id="pa23">
+        <ParameterDetails id="pa24">
           <Name>Cyclic Strain Hardening Exponent</Name>
         </ParameterDetails>
-        <ParameterDetails id="pa24">
+        <ParameterDetails id="pa25">
           <Name>Resistivity</Name>
           <Units name="Electrical Resistivity" />
         </ParameterDetails>
@@ -891,7 +891,7 @@
         <ParameterDetails id="pa30">
           <Name>Relative Permeability</Name>
         </ParameterDetails>
-        <ParameterDetails id="pa25">
+        <ParameterDetails id="pa20">
           <Name>Alternating Stress</Name>
           <Units name="Stress" />
         </ParameterDetails>
@@ -950,15 +950,13 @@
     <Materials>
       <Material>
         <Name>Structural Steel</Name>
-        <DataTransferID>efe2b501-ccf1-4692-b8e6-3dece702d122</DataTransferID>
-        <PreviousTransferIDs>
-        </PreviousTransferIDs>
+        <DataTransferID>fc7aa7a2-799c-4f52-9ef5-b52aa15dff97</DataTransferID>
+        <PreviousTransferIDs>efe2b501-ccf1-4692-b8e6-3dece702d122,,</PreviousTransferIDs>
       </Material>
       <Material>
         <Name>Structural Steel 2</Name>
-        <DataTransferID>5169cbe1-074e-43c5-a2bc-e9542d335c98</DataTransferID>
-        <PreviousTransferIDs>
-        </PreviousTransferIDs>
+        <DataTransferID>18140079-4983-4b88-a89d-15e4e5ba99a0</DataTransferID>
+        <PreviousTransferIDs>5169cbe1-074e-43c5-a2bc-e9542d335c98,,</PreviousTransferIDs>
       </Material>
     </Materials>
   </ANSYSWBTransferData>

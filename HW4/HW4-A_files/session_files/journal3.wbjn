@@ -1,0 +1,49 @@
+# encoding: utf-8
+# 2023 R2
+SetScriptVersion(Version="23.2.142")
+system1 = GetSystem(Name="SYS")
+model1 = system1.GetContainer(ComponentName="Model")
+model1.Edit()
+engineeringData1 = system1.GetContainer(ComponentName="Engineering Data")
+material1 = engineeringData1.GetMaterial(Name="Structural Steel")
+matlProp1 = material1.GetProperty(Name="S-N Curve")
+matlProp1.SetQualifier(
+    Qualifier="Interpolation",
+    Value="Semi-Log")
+matlProp1.SetQualifier(
+    Qualifier="Interpolation",
+    Value="Log-Log")
+material2 = engineeringData1.GetMaterial(Name="Structural Steel 2")
+matlProp2 = material2.GetProperty(Name="S-N Curve")
+matlProp2.SetQualifier(
+    Qualifier="Interpolation",
+    Value="Semi-Log")
+matlProp2.SetQualifier(
+    Qualifier="Interpolation",
+    Value="Log-Log")
+matlProp2.SetQualifier(
+    Qualifier="Interpolation",
+    Value="Semi-Log")
+Save(Overwrite=True)
+modelComponent1 = system1.GetComponent(Name="Model")
+modelComponent1.Update(AllDependencies=True)
+model1.Edit()
+Save(Overwrite=True)
+Save(Overwrite=True)
+model1.Exit()
+model1.Edit()
+model1.Edit()
+model1.Edit()
+model1.Edit()
+system1.Copy(KeepConnections=True)
+system2 = GetSystem(Name="SYS 1")
+geometry1 = system2.GetContainer(ComponentName="Geometry")
+geometry1.SetFile(FilePath="E:/GitHub_repos/FEA_projects/HW4/hitch-mod.scdoc")
+Save(Overwrite=True)
+model1.Exit()
+modelComponent2 = system2.GetComponent(Name="Model")
+modelComponent2.Refresh()
+model2 = system2.GetContainer(ComponentName="Model")
+model2.Edit()
+model2.Exit()
+Save(Overwrite=True)
