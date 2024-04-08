@@ -1,0 +1,23 @@
+/COM,ANSYS RELEASE 2023 R2           BUILD 23.2      UP20230531       17:25:46
+
+ *** WARNING ***                         CP =       0.203   TIME= 17:25:47
+ Element shape checking is currently inactive.  Issue SHPP,ON or         
+ SHPP,WARN to reactivate, if desired.                                    
+
+ *** WARNING ***                         CP =       0.828   TIME= 17:25:47
+ All selected contact pairs are initially open.  Rigid body motion can   
+ occur.  You may use auto CNOF/ICONT by setting KEYOPT(5) to close       
+ small gaps.                                                             
+
+ *** WARNING ***                         CP =      13.344   TIME= 17:25:50
+ There is at least 1 small equation solver pivot term (e.g., at the UZ   
+ degree of freedom of node 3698) which may indicate a numerically        
+ unstable model.  Please check your results carefully.                   
+
+ *** WARNING ***                         CP =      14.562   TIME= 17:25:50
+ A reference force value times the tolerance is used by the              
+ Newton-Raphson method for checking convergence.  The calculated         
+ reference FORCE CONVERGENCE VALUE = 7.031965848E-06 is less than a      
+ threshold.  This threshold is internally calculated.  You can           
+ overwrite it by specifying MINREF on the CNVTOL command.  Check         
+ results carefully.                                                      
